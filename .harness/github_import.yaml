@@ -1,0 +1,26 @@
+pipeline:
+  name: github import
+  identifier: github_import
+  projectIdentifier: AmitTest
+  orgIdentifier: GitXOrg
+  tags: {}
+  stages:
+    - stage:
+        name: A1
+        identifier: A1
+        template:
+          templateRef: account.inline_stage_nested
+          versionLabel: v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: A213
+                      template:
+                        templateInputs:
+                          type: HarnessApproval
+                          spec:
+                            approvers:
+                              userGroups: <+input>
