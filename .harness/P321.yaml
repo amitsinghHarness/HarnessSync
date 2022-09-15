@@ -1,8 +1,8 @@
 pipeline:
   name: P321
   identifier: P321
-  projectIdentifier: Amitgitsync2
-  orgIdentifier: default
+  projectIdentifier: AmitTest
+  orgIdentifier: GitXOrg
   tags: {}
   stages:
     - stage:
