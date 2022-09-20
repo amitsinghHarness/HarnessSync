@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "inputSet321"
+  name: "inputSet321"
+  orgIdentifier: "default"
+  projectIdentifier: "AmitTest"
+  pipeline:
+    identifier: "GithubAppToken"
+    stages:
+    - stage:
+        identifier: "A23"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "A34"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.PLQE"
