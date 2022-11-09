@@ -1,0 +1,30 @@
+pipeline:
+  name: p18Nov
+  identifier: p18Nov
+  projectIdentifier: TestProject8Nov
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: A2
+        identifier: A2
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: A3
+                  identifier: A3
+                  spec:
+                    shell: Bash
+                    onDelegate: true
+                    source:
+                      type: Inline
+                      spec:
+                        script: <+input>
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
